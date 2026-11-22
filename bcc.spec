@@ -24,7 +24,7 @@ Patch:		Fix-build-with-LLVM-23.patch
 
 BuildRequires:	bison
 BuildRequires:	cmake
-BuildRequries:  make
+BuildRequires:  make
 BuildRequires:	rust-packaging
 BuildRequires:	git
 %if %{with lua}
