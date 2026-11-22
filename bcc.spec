@@ -27,6 +27,7 @@ BuildRequires:	cmake
 BuildRequires:  make
 BuildRequires:	rust-packaging
 BuildRequires:	git
+BuildRequires:  util-linux
 %if %{with lua}
 BuildRequires:	luajit
 BuildRequires:	pkgconfig(luajit)
