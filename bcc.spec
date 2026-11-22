@@ -24,6 +24,7 @@ Patch:		Fix-build-with-LLVM-23.patch
 
 BuildRequires:	bison
 BuildRequires:	cmake
+BuildRequries:  make
 BuildRequires:	rust-packaging
 BuildRequires:	git
 %if %{with lua}
@@ -141,7 +142,7 @@ pushd builddir
 cmake -S .. -B . \
     -D CMAKE_BUILD_TYPE=None \
     -D CMAKE_INSTALL_PREFIX=/usr \
-    -W no-dev \
+    -Wno-author \
     -D CMAKE_USE_LIBBPF_PACKAGE=ON \
     -D ENABLE_LLVM_SHARED=ON \
     -D ENABLE_TESTS=OFF \
